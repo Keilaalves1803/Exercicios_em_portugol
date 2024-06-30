@@ -1,6 +1,7 @@
 programa
 {
-	inclua biblioteca Calendario
+	
+inclua biblioteca Calendario
 	funcao inicio()
 	{
 		inteiro anoN, anoA, mesN, mesA, diaN, diaA
