@@ -6,7 +6,8 @@ programa
 		inteiro exercicio
 		escreva ("Escolha um exercício: ")
 		leia(exercicio)
-		escolha(exercicio){
+
+		escolha(exercicio){ 
 
 			caso 1: exercicio1()
 			pare
