@@ -1,19 +1,25 @@
 programa
 {
-	
+	inclua biblioteca Matematica
 	funcao inicio()
 	{
-		escreva("TESTE")
+		real peso, altura, imc
+		escreva ("Digite sua altura metros: ")
+		leia (altura)
+		escreva ("Digite seu peso em quilogramas: ")
+		leia (peso)
+		imc = peso / (altura*altura)
+
+		imc = Matematica.arredondar(imc, 1)
+
+		se(imc < 18.5){
+			escreva ("Você está abaixo do peso. Seu IMC é de ", imc)
+		}senao se(imc >= 18.5 e imc < 25){
+			escreva ("Você está com peso normal. Seu IMC é de ", imc)
+		}senao se(imc >= 25 e imc <= 30){
+			escreva ("Você está acima do peso. Seu IMC é de ", imc)
+		}senao{
+			escreva ("Você tem obesidade. Seu IMC é de ", imc)
+		}
 	}
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 54; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
